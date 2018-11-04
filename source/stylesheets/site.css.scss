@@ -1,35 +1,98 @@
 @import 'base';
 @import 'variables';
 @import 'fonts';
+@import 'mixins';
 
-a {
-  text-decoration: none;
+body{
+  width: 100vw;
+  a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
+  .hero-cta{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: $flashy-orange;
+    margin-right: 30px;
+  }
 }
 
-#header {
+header {
+  background-color: $cool-purple;
+  color: white;
+  height: 100px;
+  nav{
+    max-width: $desktop-max-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left a {
+    margin-right: 25px;
+  }
+  .button-light {
+    border-radius: 5px;
+    border: solid 2px $flashy-orange;
+    padding: 10px 25px;
+    margin-left: 25px;
+  }
 
 }
 
 #hero {
   background-color: $cool-purple;
   color: white;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  h1 {
-    font-style: Bold;
-    font-size: 60px;
+  height: 500px;
+  .hero-titles {
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   h3 {
-    font-size: 36px;
-    text-align: center;
+    font-size: 28px;
     font-style: italic;
     font-weight: 400;
-
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-  span.text-emphasize{
-    font-style: normal;
-    color: $light-yellow;
+
+  .hero-cta{
+    text-align: center;
+  }
+}
+
+span.text-emphasize{
+  font-style: normal;
+  color: $light-yellow;
+}
+
+#numbers {
+  height: 250px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), linear-gradient(180deg, #40649E 0%, rgba(250, 110, 85, 0) 100%), url("/images/business_people.png");
+  background-position: center;
+  background-size: cover;
+  blockquote {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 160px;
+    margin-bottom: 30px;
   }
 }
