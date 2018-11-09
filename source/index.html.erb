@@ -2,7 +2,7 @@
 title: Welcome on RavalAds
 ---
 
-<section id="hero">
+<section id="hero" class="wrapper">
   <div class="inner">
     <h1>The global programmatic platform</h1>
     <h3>helping
@@ -19,21 +19,29 @@ title: Welcome on RavalAds
 
 <section id="numbers">
   <div class="numbers-container">
-    <div class="number-1">
+    <div>
       <p>Daily impressions</p>
-      <p>+150M</p>
+      <div class="dark-container">
+        <p>+150M</p>
+      </div>
     </div>
-    <div class="number-2">
+    <div>
       <p>Advertisers</p>
-      <p>+500</p>
+      <div class="dark-container">
+        <p>+500</p>
+      </div>
     </div>
-    <div class="number-3">
+    <div>
       <p>Request time</p>
-      <p>28MS</p>
+      <div class="dark-container">
+        <p>28MS</p>
+      </div>
     </div>
-    <div class="number-4">
+    <div>
       <p>Countries</p>
-      <p>216</p>
+      <div class="dark-container">
+        <p>216</p>
+      </div>
     </div>
   </div>
   <h3>We stop at nothing to ensure
@@ -43,14 +51,15 @@ title: Welcome on RavalAds
 </section>
 
 <section id="benefits">
-  <h2>Why choose RavalAds !</h2>
+  <div class="benefits-top inner">
+    <h2>Why choose RavalAds !</h2>
 
-  <%= link_to "Multi Format", '/', class: 'benefit-1' %>
-  <%= link_to "Cross Device", '/', class: 'benefit-2' %>
-  <%= link_to "Open RTP Integrations", '/', class: 'benefit-3' %>
-  <%= link_to "Worldwide Coverage", '/', class: 'benefit-4' %>
-
-  <div class="benefit-hero">
+    <%= link_to "Multi Format", '/', class: 'benefit-1' %>
+    <%= link_to "Cross Device", '/', class: 'benefit-2' %>
+    <%= link_to "Open RTP Integrations", '/', class: 'benefit-3' %>
+    <%= link_to "Worldwide Coverage", '/', class: 'benefit-4' %>
+  </div>
+  <div class="benefit-hero inner">
     <div class="benefit-text">
       <h2>Multi Format</h2>
       <p>Run top-performing ads on mobile and desktop screens to deliver amazing and UX-friendly ad experiences without any technical expertise.</p>
