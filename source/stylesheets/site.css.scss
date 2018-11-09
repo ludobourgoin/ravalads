@@ -41,7 +41,6 @@ span.text-emphasize{
   background-color: $orange;
   padding: 25px 40px;
   border-radius: 3px;
-  margin: 100px 0;
   font-size: 19px;
   font-weight: 500;
 }
@@ -90,10 +89,13 @@ header {
   @include wrapper;
   .inner {
     @include inner;
-    height: 75vh;
     .hero-cta {
       display: flex;
       justify-content: center;
+      .btn {
+        margin-top: 80px;
+        margin-bottom: 130px;
+      }
       .btn-left {
         margin-right: 30px;
       }
@@ -101,22 +103,33 @@ header {
   }
 }
 
-.quote {
 
+
+#numbers {
+  @include purple-bg;
+  height: 350px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("/images/business_people.png");
+  background-position: right 50% bottom 73%;
+  background-size: cover;
+  .numbers-container {
+    width: 750px;
+    height: 150px;
+    position: relative;
+    bottom: 35px;
+    background-color: $grey;
+    padding: 40 px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    color: $grey-dark;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+  }
 }
-
-
-
-// #numbers {
-//   height: 250px;
-//   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), linear-gradient(180deg, #40649E 0%, rgba(250, 110, 85, 0) 100%), url("/images/business_people.png");
-//   background-position: center;
-//   background-size: cover;
-//   blockquote {
-//     color: white;
-//     font-size: 24px;
-//     text-align: center;
-//     padding-top: 160px;
-//     margin-bottom: 30px;
-//   }
-// }
