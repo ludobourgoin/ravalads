@@ -7,6 +7,11 @@
 // General style
  @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
 
+body {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .wrapper {
   width: 100vw;
 }
@@ -17,7 +22,6 @@
 }
 
 h1, h2, h3 {
-  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
@@ -41,13 +45,9 @@ h3 {
   margin-top: 50px;
 }
 
-p, a {
-  font-family: 'Ubuntu', sans-serif;
-
-}
-
-body {
-  box-sizing: border-box;
+h4 {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 a {
@@ -67,6 +67,7 @@ span.text-emphasize{
   border-radius: 3px;
   font-size: 19px;
   font-weight: 500;
+
 }
 
 .btn-light {
@@ -74,6 +75,9 @@ span.text-emphasize{
   border-radius: 3px;
   padding: 10px 25px;
   margin-left: 20px;
+  a:hover {
+    color: white;
+  }
 }
 
 
@@ -88,6 +92,9 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 130px;
     align-items: center;
+    a:hover {
+      border-bottom: solid white 2px;
+    }
     .header-left {
       justify-self: start;
       a {
@@ -103,9 +110,10 @@ header {
     }
     .header-right {
       justify-self: end;
+      }
     }
   }
-}
+
 
 
 
@@ -173,6 +181,7 @@ header {
 #benefits {
   background-color: $grey;
   color: $purple;
+  padding-bottom: 80px;
   .benefits-btn-list {
     text-align: center;
     margin: 50px 0 20px 0;
@@ -204,18 +213,32 @@ header {
   }
   .benefits-hero {
     width: 1100px;
-    height: 400px;
     @include purple-bg;
     display: flex;
-    justify-content: center;
-    align-items: space-around;
-    padding: 80px;
-    .benefit-text h2 {
-      text-align: left;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px 80px;
+    .benefit-text {
+      max-width: 50%;
+      h2 {
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 25px;
+      }
+      p {
+        margin-bottom: 15px;
+        line-height: 1.4em;
+      }
+    }
+    .benefit-illustration {
+      text-align: center;
+      img {
+        width: 85%;
+        height: auto;
+      }
     }
   }
 }
-
 
 #brands {
   background-color: $blue;
@@ -229,6 +252,38 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
-
   }
+}
+
+#features {
+  background-color: $grey;
+  color: $purple;
+  h3 {
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+}
+
+#cta {
+  @include purple-bg;
+  .inner {
+    text-align: center;
+    p {
+      margin: 20px 0 40px 0;;
+    }
+    .btn {
+      display: inline-block;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+footer {
+  background-color: $blue;
+  color: white;
+  .inner {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+  }
+
 }

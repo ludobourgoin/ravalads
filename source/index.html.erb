@@ -53,45 +53,44 @@ title: Welcome on RavalAds
 <section id="benefits" class="wrapper">
   <div class="inner">
     <h2>Why choose RavalAds !</h2>
-      <div class="benefits-btn-list">
-        <div id="benefit-1"  class="benefits-btn-selected">
-          <div>
-            <%= image_tag ('icons/1-selected.svg') %>
-          </div>
-          <div>
-            <p>Multi Format</p>
-          </div>
+    <div class="benefits-btn-list">
+      <div id="benefit-1" class="benefits-btn-selected">
+        <div>
+          <%= image_tag ('icons/1-selected.svg') %>
         </div>
-
-        <div id="benefit-2" class="benefits-btn">
-          <div>
-            <%= image_tag ('icons/2.svg') %>
-          </div>
-          <div>
-            <p>Cross Device</p>
-          </div>
+        <div>
+          <p>Multi Format</p>
         </div>
-
-        <div id="benefit-3" class="benefits-btn">
-          <div>
-            <%= image_tag ('icons/3.svg') %>
-          </div>
-          <div>
-            <p>Open RTB Integrations</p>
-          </div>
-        </div>
-
-        <div id="benefit-4" class="benefits-btn">
-          <div>
-            <%= image_tag ('icons/4.svg') %>
-          </div>
-          <div>
-            <p>Worldwide Coverage</p>
-          </div>
-        </div>
-
-
       </div>
+
+      <div id="benefit-2" class="benefits-btn">
+        <div>
+          <%= image_tag ('icons/2.svg') %>
+        </div>
+        <div>
+          <p>Cross Device</p>
+        </div>
+      </div>
+
+      <div id="benefit-3" class="benefits-btn">
+        <div>
+          <%= image_tag ('icons/3.svg') %>
+        </div>
+        <div>
+          <p>Open RTB Integrations</p>
+        </div>
+      </div>
+
+      <div id="benefit-4" class="benefits-btn">
+        <div>
+          <%= image_tag ('icons/4.svg') %>
+        </div>
+        <div>
+          <p>Worldwide Coverage</p>
+        </div>
+      </div>
+
+    </div>
 
     <%= link_to "Multi Format", '/', class: 'benefit-1' %>
     <%= link_to "Cross Device", '/', class: 'benefit-2' %>
@@ -103,6 +102,7 @@ title: Welcome on RavalAds
     <div class="benefit-text">
       <h2>Multi Format</h2>
       <p>Run top-performing ads on mobile and desktop screens to deliver amazing and UX-friendly ad experiences without any technical expertise.</p>
+      <p>Run top-performing ads on mobile and desktop screens to deliver amazing and UX-friendly ad experiences without any technical expertise.</p>
       <p>Native, video, push notification, banner & pop.</p>
     </div>
     <div class="benefit-illustration">
@@ -112,7 +112,7 @@ title: Welcome on RavalAds
 </section>
 
 <section id="brands">
-  <p>We already work ith renowned brands</p>
+  <p>We already work with renowned brands</p>
   <div class="brand-logos">
     <%= image_tag ('brands/popcash.svg')%>
     <%= image_tag ('brands/peakadx.png')%>
@@ -122,71 +122,76 @@ title: Welcome on RavalAds
 
 </section>
 
+<section id="features" class="wrapper">
 
-
-
-
-<section id="features">
-  <h2>Key Features</h2>
-  <h3>The best features to help you make a lot of money</h3>
-
-  <!-- Feature #1 -->
-  <div class="feature">
-    <div class="icons">
-      <%= image_tag ('icons/icon_1.png')%>
+  <div class="inner">
+    <h2>Key Features</h2>
+    <h3>A dynamic platform made for you</h3>
+  </div>
+  <div class="features-list inner">
+    <!-- Feature #1 -->
+    <div class="feature">
+      <div class="icons">
+        <%= image_tag ('icons/1-smart-targeting.svg')%>
+      </div>
+      <h4>Smart Targeting</h4>
+      <p>Target the right audience based on different criteria such as geography, demographic, interest, devices ...</p>
     </div>
-    <h4>Smart Targeting</h4>
-    <p>Target the right audience based on different criteria such as geography, demographic, interest, devices ...</p>
+
+    <!-- Feature #2 -->
+    <div class="feature">
+      <div class="icons">
+        <%= image_tag ('icons/2-bidding-tech.svg')%>
+      </div>
+      <h4>Ultimate Bidding technology</h4>
+      <p>We connect to exclusive private marketplaces, with an impression live buy, based on advanced bidding system</p>
+    </div>
+
+    <!-- Feature #3 -->
+    <div class="feature">
+      <div class="icons">
+        <%= image_tag ('icons/3-exclu-traffic.svg')%>
+      </div>
+      <h4>Exclusive Traffic</h4>
+      <p>All the traffic we manage is selected and filtered with internal softwares, in order to provide the best results to your campaign</p>
+    </div>
+
+    <!-- Feature #4 -->
+    <div class="feature">
+      <div class="icons">
+        <%= image_tag ('icons/4-reporting.svg')%>
+      </div>
+      <h4>Direct Reporting</h4>
+      <p>Check in real time your performances and earnings via our statistics and analytics report</p>
+    </div>
+
+    <!-- Feature #5 -->
+    <div class="feature">
+      <div class="icons">
+        <%= image_tag ('icons/5-platform.svg')%>
+      </div>
+      <h4>All-In-One Platform</h4>
+      <p>Out multifunctional platform allows both publishers and advertisers to connect universally</p>
+    </div>
+
+    <!-- Feature #6 -->
+    <div class="feature">
+      <div class="icons">
+        <%= image_tag ('icons/6-account.svg')%>
+      </div>
+      <h4>Dedicated Account</h4>
+      <p>Our industry specialists are here to give you the best possible support and personnalized guidance</p>
+    </div>
   </div>
 
-  <!-- Feature #2 -->
-  <div class="feature">
-    <div class="icons">
-      <%= image_tag ('icons/icon_2.png')%>
-    </div>
-    <h4>Ultimate Bidding technology</h4>
-    <p>We connect to exclusive private marketplaces, with an impression live buy, based on advanced bidding system</p>
-  </div>
+</div>
 
-  <!-- Feature #3 -->
-  <div class="feature">
-    <div class="icons">
-      <%= image_tag ('icons/icon_3.png')%>
-    </div>
-    <h4>Exclusive Traffic</h4>
-    <p>All the traffic we manage is selected and filtered with internal softwares, in order to provide the best results to your campaign</p>
-  </div>
-
-  <!-- Feature #4 -->
-  <div class="feature">
-    <div class="icons">
-      <%= image_tag ('icons/icon_4.png')%>
-    </div>
-    <h4>Direct Reporting</h4>
-    <p>Check in real time your performances and earnings via our statistics and analytics report</p>
-  </div>
-
-  <!-- Feature #5 -->
-  <div class="feature">
-    <div class="icons">
-      <%= image_tag ('icons/icon_5.png')%>
-    </div>
-    <h4>All-In-One Platform</h4>
-    <p>Out multifunctional platform allows both publishers and advertisers to connect universally</p>
-  </div>
-
-  <!-- Feature #6 -->
-  <div class="feature">
-    <div class="icons">
-      <%= image_tag ('icons/icon_6.png')%>
-    </div>
-    <h4>Dedicated Account</h4>
-    <p>Our industry specialists are here to give you the best possible support and personnalized guidance</p>
-  </div>
 </section>
 
-<section id="cta">
-  <h2>Work with us !</h2>
-  <p>Your questions are important to us. Please feel free to contact us for any request you might have regarding our service.</p>
-
+<section id="cta" class="wrapper">
+  <div class="inner">
+    <h2>Work with us !</h2>
+    <p>Your questions are important to us. Please feel free to contact us for any request you might have regarding our service.</p>
+    <%= link_to 'Contact us', '/contact', class: 'btn' %>
+  </div>
 </section>
