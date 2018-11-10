@@ -258,9 +258,29 @@ header {
 #features {
   background-color: $grey;
   color: $purple;
+  padding-bottom:50px;
   h3 {
     margin-top: 20px;
     text-transform: capitalize;
+    font-style: normal;
+  }
+  .features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 20px;
+    padding: 0px 140px;
+    .feature {
+      text-align: center;
+      padding: 30px;
+    }
+    h4, img {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+      line-height: 1.4em;
+    }
   }
 }
 
