@@ -9,5 +9,6 @@
 
 @mixin inner {
   width: 90vw;
+  max-width: 1300px;
   margin: 0px auto;
 }

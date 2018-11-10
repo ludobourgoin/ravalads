@@ -50,35 +50,81 @@ title: Welcome on RavalAds
 
 </section>
 
-<section id="benefits">
-  <div class="benefits-top inner">
+<section id="benefits" class="wrapper">
+  <div class="inner">
     <h2>Why choose RavalAds !</h2>
+      <div class="benefits-btn-list">
+        <div id="benefit-1"  class="benefits-btn-selected">
+          <div>
+            <%= image_tag ('icons/1-selected.svg') %>
+          </div>
+          <div>
+            <p>Multi Format</p>
+          </div>
+        </div>
+
+        <div id="benefit-2" class="benefits-btn">
+          <div>
+            <%= image_tag ('icons/2.svg') %>
+          </div>
+          <div>
+            <p>Cross Device</p>
+          </div>
+        </div>
+
+        <div id="benefit-3" class="benefits-btn">
+          <div>
+            <%= image_tag ('icons/3.svg') %>
+          </div>
+          <div>
+            <p>Open RTB Integrations</p>
+          </div>
+        </div>
+
+        <div id="benefit-4" class="benefits-btn">
+          <div>
+            <%= image_tag ('icons/4.svg') %>
+          </div>
+          <div>
+            <p>Worldwide Coverage</p>
+          </div>
+        </div>
+
+
+      </div>
 
     <%= link_to "Multi Format", '/', class: 'benefit-1' %>
     <%= link_to "Cross Device", '/', class: 'benefit-2' %>
     <%= link_to "Open RTP Integrations", '/', class: 'benefit-3' %>
     <%= link_to "Worldwide Coverage", '/', class: 'benefit-4' %>
+
   </div>
-  <div class="benefit-hero inner">
+  <div class="benefits-hero inner">
     <div class="benefit-text">
       <h2>Multi Format</h2>
       <p>Run top-performing ads on mobile and desktop screens to deliver amazing and UX-friendly ad experiences without any technical expertise.</p>
       <p>Native, video, push notification, banner & pop.</p>
     </div>
     <div class="benefit-illustration">
-      <%= image_tag ('illustrations/illustration_1.png')%>
+      <%= image_tag ('illustrations/benefit_1.svg')%>
     </div>
   </div>
 </section>
 
 <section id="brands">
-  <p>We also work with :</p>
+  <p>We already work ith renowned brands</p>
+  <div class="brand-logos">
+    <%= image_tag ('brands/popcash.svg')%>
+    <%= image_tag ('brands/peakadx.png')%>
+    <%= image_tag ('brands/popcash.svg')%>
+    <%= image_tag ('brands/peakadx.png')%>
+  </div>
 
-  <%= image_tag ('brands/brand_1.png')%>
-  <%= image_tag ('brands/brand_2.png')%>
-  <%= image_tag ('brands/brand_3.png')%>
-  <%= image_tag ('brands/brand_4.png')%>
 </section>
+
+
+
+
 
 <section id="features">
   <h2>Key Features</h2>
