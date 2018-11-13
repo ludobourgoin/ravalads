@@ -196,10 +196,10 @@ header {
   background-color: $grey;
   color: $purple;
   padding-bottom: 80px;
-  .benefits-btn-list {
+  #tabs {
     text-align: center;
     margin: 50px 0 20px 0;
-    .benefits-btn-selected {
+    .active {
       display: inline-flex;
       border: solid 2px $orange;
       align-items: center;
@@ -211,7 +211,8 @@ header {
         margin-right: 10px;
       }
     }
-    .benefits-btn {
+
+    .inactive {
       display: inline-flex;
       border: solid 2px $orange;
       background-color: $orange;
@@ -220,12 +221,17 @@ header {
       color: white;
       margin-right: 20px;
       padding: 5px 19px 5px 12px;
+      &:hover {
+        cursor: pointer;
+        background-color: $orange-hover;
+        border-color: $orange-hover;
+      }
       img {
         margin-right: 10px;
       }
     }
   }
-  .benefits-hero {
+  .tab-container {
     width: 1100px;
     @include purple-bg;
     display: flex;
@@ -276,7 +282,6 @@ header {
 #features {
   background-color: $grey;
   color: $purple;
-  padding-bottom:50px;
   h3 {
     margin-top: 20px;
     text-transform: capitalize;
