@@ -1,0 +1,107 @@
+.bg-grey {
+  background-color: $grey;
+}
+
+.form-labels-on-top {
+  box-sizing: border-box;
+  max-width: 475px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-labels-on-top .form-row {
+  text-align: left;
+  max-width: 315px;
+  margin: 25px auto 0;
+}
+
+.form-labels-on-top .form-title-row {
+  margin: 0 auto 40px;
+}
+
+.bg-grey {
+  h1 {
+    text-align: center;
+    color: $purple;
+    padding: 80px 0 20px;
+    margin: 0;
+  }
+
+  h4 {
+    text-align: center;
+    color: $purple;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.form-labels-on-top .form-row > label span {
+  display: block;
+  box-sizing: border-box;
+  color: $purple;
+  font-size: 20px;
+  font-weight: 500;
+  width: 250px;
+  padding: 0 0 12px;
+}
+
+.form-labels-on-top input {
+  color: $grey-dark;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 12px 18px;
+  border: 1px solid $purple;
+  border-radius: 3px;
+}
+// In case we need dropdown menu at some point
+.form-labels-on-top select {
+  background-color: #ffffff;
+  color: #5f5f5f;
+  box-sizing: border-box;
+  width: 240px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 12px 18px;
+  border: 1px solid #dbdbdb;
+}
+
+.form-labels-on-top .form-radio-buttons > div {
+  margin-bottom: 10px;
+}
+
+.form-labels-on-top .form-radio-buttons label span {
+  margin-left: 8px;
+  color: #5f5f5f;
+  font-weight: normal;
+}
+
+.form-labels-on-top .form-radio-buttons input {
+  width: auto;
+}
+
+.form-labels-on-top button {
+  border-radius: 3px;
+  background-color: $orange;
+  color: white;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 22px;
+  border: 0;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  font-size: 19px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $orange-hover;
+  }
+}
+/*	Making the form responsive */
+@media (max-width: 600px) {
+  .form-labels-on-top {
+    padding: 30px;
+  }
+
+  .form-labels-on-top input {
+    width: 240px;
+  }
+}

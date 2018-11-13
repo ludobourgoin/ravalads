@@ -3,6 +3,7 @@
 @import 'base';
 @import 'variables';
 @import 'mixins';
+@import 'form';
 
 // General style
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:500,600|Ubuntu:400,500,700');
@@ -361,4 +362,11 @@ footer {
   padding-top: 30px;
   text-align: center;
   color: $grey;
+}
+
+//  Contact form
+
+form {
+  margin: 100px auto;
+
 }
