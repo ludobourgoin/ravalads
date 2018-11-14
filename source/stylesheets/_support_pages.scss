@@ -1,0 +1,30 @@
+.support-pages {
+  .inner {
+    max-width: 700px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    padding-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  p, ul li, ol li {
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: justify;
+    list-style: decimal;
+  }
+
+  p:last-child {
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  span {
+    font-weight: 700;
+  }
+}
