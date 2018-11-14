@@ -1,15 +1,11 @@
-// This is where it all goes :)
+$(document).ready(function(){
 
-$(document).ready(function($) {
+    $('.tab-btn').click(function(e) {
+        e.preventDefault();
+        $('.info').hide();
+        $('.info').eq($(this).index()).show();
+        $('.tab-btn').removeClass('current');
+        $(this).addClass('current');
 
-  $('.tab-container').hide();
-  $('.tab-container:first').show();
-  $('#tab1').addClass('active');
-
-  $('.tab_content').click(function(event) {
-    $('.tab_content').removeClass('active');
-    $(this).addClass('active');
-    $('.tab_container').hide();
-
-  });
+    });
 });
