@@ -3,24 +3,20 @@
 @import 'variables';
 @import 'mixins';
 @import 'form';
-@import 'support_pages';
-
-// General style
+@import 'support_pages'; // General style
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:500,600|Ubuntu:400,500,700');
 
 body {
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
-}
-
-.wrapper {
-  width: 100vw;
+  font-size: 14px;
 }
 
 .inner {
-  width: 90vw;
   max-width: 1300px;
+  width: 85vw;
   margin: 0 auto;
+  padding: 50px 0;
 }
 
 .grey-bg {
@@ -45,33 +41,34 @@ h3 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.5em;
   font-weight: 700;
   text-transform: capitalize;
-  padding-top: 150px;
+  padding: 20px 0;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 2.5em;
   font-weight: 700;
   text-transform: capitalize;
-  padding-top: 80px;
+  padding: 10px 0;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2em;
   font-style: italic;
-  margin-top: 50px;
+  padding: 10px 0;
+  text-transform: lowercase;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
+  padding: 10px 0;
 }
 
 a {
   color: white;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -82,10 +79,12 @@ span.text-emphasize {
 
 .btn {
   background-color: $orange;
-  padding: 25px 40px;
+  padding: 20px 30px;
   border-radius: 3px;
   font-size: 19px;
   font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
     background-color: $orange-hover;
@@ -93,9 +92,9 @@ span.text-emphasize {
 }
 
 .btn-light {
-  border: solid 2px $orange;
+  border: solid 1px $orange;
   border-radius: 3px;
-  padding: 10px 25px;
+  padding: 8px 16px;
   margin-left: 20px;
 
   a:hover {
@@ -103,34 +102,42 @@ span.text-emphasize {
   }
 }
 // Components style
+
 header {
+  .inner {
+    padding-top: 25px;
+  }
 
   nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 130px;
     align-items: center;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+    }
 
     a:hover {
       border-bottom: solid white 2px;
     }
 
-
-
     .header-left {
-      justify-self: center;
+      justify-self: left;
+
       a:hover {
         border: none;
-        text-decoration: none;
       }
+
       img {
-        width: 85%;
+        width: 150px;
         height: auto;
       }
     }
 
     .header-center {
       justify-self: start;
+
       a {
         margin-right: 20px;
       }
@@ -138,23 +145,26 @@ header {
 
     .header-right {
       justify-self: end;
+
       .btn-light:hover {
         background-color: $orange-hover;
-        border: $orange-hover solid 2px;
+        border: $orange-hover solid 1px;
       }
     }
   }
 }
 
 #hero {
+  .inner {
+    padding: 80px 0;
+  }
 
   .hero-cta {
     display: flex;
     justify-content: center;
 
     .btn {
-      margin-top: 100px;
-      margin-bottom: 130px;
+      margin: 50px 0;
     }
 
     .btn-left {
@@ -165,16 +175,19 @@ header {
 
 #numbers {
   height: 300px;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("/images/business_people.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("/images/business_people2.png");
   background-position: right 50% bottom 73%;
   background-size: cover;
+
+  h3 {
+    margin-top: 30px;
+  }
 
   .numbers-container {
     width: 750px;
     position: relative;
     bottom: 20px;
     background-color: $grey;
-    padding: 40 px;
     border-radius: 3px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     display: grid;
@@ -211,7 +224,7 @@ header {
 
 .nav-tabs {
   text-align: center;
-  margin: 50px 0 20px 0;
+  margin: 50px 0 20px;
 }
 
 .tab-btn {
@@ -222,6 +235,7 @@ header {
   color: white;
   padding: 12px 28px;
   margin-right: 20px;
+
   &:hover {
     background-color: $orange-hover;
     border-color: $orange-hover;
@@ -234,16 +248,20 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 90px 80px;
+
   .info-left {
     width: 50%;
+
     h2 {
       text-align: left;
       padding-top: 0;
     }
   }
+
   .info-right {
     width: 50%;
     margin: auto;
+
     img {
       width: 80%;
     }
@@ -254,16 +272,12 @@ header {
   display: none;
 }
 
-.active {
-
-}
+.active {}
 
 .current {
   background-color: $grey;
   color: $orange;
 }
-
-
 // #benefits {
 //   padding-bottom: 80px;
 //   .benefits-btn-list {
@@ -327,52 +341,49 @@ header {
 
 #brands {
   text-align: center;
+  h4 {
+    font-weight: 400;
+  }
+  .inner {
+    padding: 25px 0;
 
-  p {
-    padding-top: 40px;
   }
 
   .brand-logos {
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
-
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
     img {
       width: 120px;
       height: auto;
     }
-  }
+}
 }
 
 #features {
-  padding-bottom: 50px;
-
   h3 {
-    margin-top: 20px;
-    text-transform: capitalize;
-    font-style: normal;
+    margin-bottom: 30px;
   }
 
   .features-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr;
-    margin-top: 20px;
-    padding: 0 140px;
+    grid-gap: 40px;
+    max-width: 1150px;
 
     .feature {
       text-align: center;
-      padding: 30px;
     }
-
-    h4,
     img {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     p {
-      margin-bottom: 15px;
       line-height: 1.4em;
     }
   }
@@ -381,25 +392,25 @@ header {
 #cta {
   .inner {
     text-align: center;
+  }
 
-    p {
-      margin: 20px 0 40px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-bottom: 60px;
-    }
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
   }
 }
 
 footer {
-  padding: 50px 0;
+
+
   .inner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 100px;
-    padding-top: 20px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+
+    p {
+      max-width: 380px;
+    }
 
     .logo-tagline img {
       margin-bottom: 20px;
@@ -414,21 +425,21 @@ footer {
       color: $grey;
     }
 
-    .links-col-3 p {
-      font-size: 16px;
-    }
-
     ul {
       list-style-type: none;
 
       li {
         padding-bottom: 10px;
         text-transform: capitalize;
-
         a:hover {
           text-decoration: underline;
         }
       }
+    }
+    .payment img {
+      margin-right: 8px;
+      margin-bottom: 8px;
+
     }
   }
 }
@@ -441,11 +452,72 @@ footer {
 }
 
 .sub-footer {
-  padding-top: 30px;
+  padding-bottom: 20px;
   text-align: center;
   color: $grey;
 }
-//  Contact form
-form {
-  margin: 100px auto;
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .inner {
+    padding: 40px 0;
+  }
+
+  .btn {
+    padding: 15px 18px;
+    font-size: 1em;
+  }
+  // Components
+  nav {
+    .header-center,
+    .header-right {
+      display: none;
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    img {
+      min-width: 150px;
+      height: auto;
+    }
+  }
+
+  #numbers {
+    display: none;
+  }
+
+  #hero {
+    .inner {
+      padding: 30px 0;
+    }
+  }
+
+  #brands {
+    .brand-logos {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
+
+footer {
+  padding: 10px;
+  .inner{
+    grid-template-columns: 1fr;
+    grid-row: 4fr;
+    grid-gap: 50px;  }
+}
+
+
+
 }

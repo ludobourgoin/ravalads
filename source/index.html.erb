@@ -7,8 +7,11 @@
       <span class="text-emphasize">Publishers</span>
       to maximize revenues</h3>
     <div class="hero-cta">
+      <%= link_to 'Contact Us', '/contact.html', class: 'btn' %>
+<!--
       <%= link_to 'for publishers', '/publishers.html', class: 'btn btn-left' %>
       <%= link_to 'for advertisers', '/advertiers.html', class: 'btn btn-right' %>
+-->
     </div>
   </div>
 </section>
@@ -111,24 +114,28 @@
 
 </section> -->
 
-<!-- <section id="brands" class="blue-bg">
-  <p>We already work with renowned brands</p>
-  <div class="brand-logos inner ">
-    <%= image_tag ('brands/popcash.svg')%>
-    <%= image_tag ('brands/peakadx.png')%>
-    <%= image_tag ('brands/popcash.svg')%>
-    <%= image_tag ('brands/peakadx.png')%>
+<section id="brands" class="blue-bg">
+  <div class="inner">
+    <h4>We already work with renowned brands</h4>
+
+    <div class="brand-logos">
+      <%= image_tag ('brands/popcash.svg')%>
+      <%= image_tag ('brands/adhunter.png')%>
+      <%= image_tag ('brands/adacts.png')%>
+      <%= image_tag ('brands/peakadx.png')%>
+    </div>
   </div>
 
-</section> -->
+
+</section>
 
 <section id="features" class="wrapper grey-bg">
 
   <div class="inner">
     <h2>Key Features</h2>
     <h3>A dynamic platform made for you</h3>
-  </div>
-  <div class="features-list inner">
+
+  <div class="features-list">
     <!-- Feature #1 -->
     <div class="feature">
       <div class="icons">
@@ -183,13 +190,13 @@
       <p>Our industry specialists are here to give you the best possible support and personnalized guidance</p>
     </div>
   </div>
-
+</div>
 </section>
 
 <section id="cta" class="wrapper purple-bg">
   <div class="inner">
     <h2>Work with us !</h2>
-    <p>Your questions are important to us. Please feel free to contact us for any request you might have regarding our service.</p>
+    <h3>Feel free to contact us <span class="text-emphasize">for any request</span> you may have</h3>
     <%= link_to 'Contact us', '/contact.html', class: 'btn' %>
   </div>
 </section>
