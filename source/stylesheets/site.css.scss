@@ -16,7 +16,7 @@ body {
   max-width: 1300px;
   width: 85vw;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .grey-bg {
@@ -51,14 +51,13 @@ h2 {
   font-size: 2.5em;
   font-weight: 700;
   text-transform: capitalize;
-  padding: 10px 0;
+  margin-bottom: 15px;
 }
 
 h3 {
   font-size: 2em;
   font-style: italic;
   padding: 10px 0;
-  text-transform: lowercase;
 }
 
 h4 {
@@ -110,7 +109,7 @@ header {
 
   nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 150px 1fr;
     align-items: center;
 
     a {
@@ -135,16 +134,12 @@ header {
       }
     }
 
-    .header-center {
-      justify-self: start;
-
-      a {
-        margin-right: 20px;
-      }
-    }
 
     .header-right {
       justify-self: end;
+      a {
+        margin-right: 20px;
+      }
 
       .btn-light:hover {
         background-color: $orange-hover;
@@ -212,137 +207,61 @@ header {
       padding: 16px;
       text-align: center;
       color: white;
-      font-size: 30px;
+      font-size: 40px;
       font-family: 'Barlow Condensed', sans-serif;
     }
   }
 }
 
 #benefits {
-  padding-bottom: 80px;
-}
-
-.nav-tabs {
-  text-align: center;
-  margin: 50px 0 20px;
-}
-
-.tab-btn {
-  border-radius: 50px;
-  border: solid 2px $orange;
-  background-color: $orange;
-  text-transform: capitalize;
-  color: white;
-  padding: 12px 28px;
-  margin-right: 20px;
-
-  &:hover {
-    background-color: $orange-hover;
-    border-color: $orange-hover;
-  }
-}
-
-.info {
-  width: 1100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 90px 80px;
-
-  .info-left {
-    width: 50%;
-
-    h2 {
-      text-align: left;
-      padding-top: 0;
-    }
-  }
-
-  .info-right {
-    width: 50%;
-    margin: auto;
-
-    img {
-      width: 80%;
-    }
-  }
-}
-
-.info {
-  display: none;
-}
-
-.active {}
-
-.current {
   background-color: $grey;
-  color: $orange;
+  color: $purple;
+  h2 {
+    margin-bottom: 50px;
+  }
+
 }
-// #benefits {
-//   padding-bottom: 80px;
-//   .benefits-btn-list {
-//     text-align: center;
-//     margin: 50px 0 20px 0;
-//     .benefits-btn-selected {
-//       display: inline-flex;
-//       border: solid 2px $orange;
-//       align-items: center;
-//       border-radius: 50px;
-//       color: $orange;
-//       margin-right: 20px;
-//       padding: 5px 17px 5px 12px;
-//       img {
-//         margin-right: 10px;
-//       }
-//     }
-//
-//     .benefits-btn {
-//       display: inline-flex;
-//       border: solid 2px $orange;
-//       background-color: $orange;
-//       align-items: center;
-//       border-radius: 50px;
-//       color: white;
-//       margin-right: 20px;
-//       padding: 5px 19px 5px 12px;
-//       img {
-//         margin-right: 10px;
-//       }
-//     }
-//   }
-//   .benefits-hero {
-//     width: 1100px;
-//     @include purple-bg;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     padding: 90px 80px;
-//     .benefit-text {
-//       max-width: 50%;
-//       h2 {
-//         text-align: left;
-//         padding-top: 0;
-//         padding-bottom: 25px;
-//       }
-//       p {
-//         margin-bottom: 15px;
-//         line-height: 1.4em;
-//       }
-//     }
-//     .benefit-illustration {
-//       text-align: center;
-//       img {
-//         width: 85%;
-//         height: auto;
-//       }
-//     }
-//   }
-// }
+
+.benefits {
+  max-width: 1200px;
+  margin: auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.benefit {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  img {
+    padding-right: 20px;
+  }
+}
+
+.benefit-copy {
+  max-width: 350px;
+  h4 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  p {
+    line-height: 1.4em;
+  }
+  a {
+    text-transform: none;
+    color: $orange;
+  }
+}
 
 #brands {
   text-align: center;
   h4 {
     font-weight: 400;
+    font-size: 25px;
+    padding: 30px 0;
   }
   .inner {
     padding: 25px 0;
@@ -365,7 +284,7 @@ header {
 }
 
 #features {
-  h3 {
+  h2 {
     margin-bottom: 50px;
   }
 
@@ -458,7 +377,11 @@ footer {
   color: $grey;
 }
 
-@media (max-width: 750px) {
+.advertisers {
+
+}
+
+@media (max-width: 800px) {
   h1 {
     font-size: 2.5em;
   }
@@ -481,7 +404,6 @@ footer {
   }
   // Components
   nav {
-    .header-center,
     .header-right {
       display: none;
     }
@@ -518,7 +440,5 @@ footer {
     grid-row: 4fr;
     grid-gap: 50px;  }
 }
-
-
 
 }
