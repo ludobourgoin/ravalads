@@ -16,7 +16,7 @@ body {
   max-width: 1300px;
   width: 85vw;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .grey-bg {
@@ -207,7 +207,7 @@ header {
       padding: 16px;
       text-align: center;
       color: white;
-      font-size: 30px;
+      font-size: 40px;
       font-family: 'Barlow Condensed', sans-serif;
     }
   }
@@ -235,12 +235,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-
+  img {
+    padding-right: 20px;
+  }
 }
 
 .benefit-copy {
   max-width: 350px;
-  margin-left: 20px;
   h4 {
     text-align: left;
     font-size: 30px;
@@ -260,7 +261,7 @@ header {
   h4 {
     font-weight: 400;
     font-size: 25px;
-    padding: 15px 0;
+    padding: 30px 0;
   }
   .inner {
     padding: 25px 0;
@@ -380,7 +381,7 @@ footer {
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 2.5em;
   }
@@ -439,7 +440,5 @@ footer {
     grid-row: 4fr;
     grid-gap: 50px;  }
 }
-
-
 
 }
