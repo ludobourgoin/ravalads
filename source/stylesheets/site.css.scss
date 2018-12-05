@@ -128,9 +128,6 @@ header {
     .header-right {
       justify-self: end;
 
-      a:first-child {
-        display: none;
-      }
 
       a:hover {
         background-color: $orange-hover;
@@ -205,9 +202,7 @@ header {
   background-color: $grey;
   color: $purple;
   padding-bottom: 50px;
-  h2 {
-    margin-bottom: 50px;
-  }
+
 }
 
 .benefits {
@@ -216,6 +211,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 70px 0;
 }
 
 .benefit {
@@ -248,6 +244,7 @@ header {
 
   p {
     padding-top: 40px;
+    font-size: 25px;
   }
 
   .brand-logos {
@@ -369,4 +366,69 @@ footer {
 //  Contact form
 form {
   margin: 100px auto;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .inner {
+    padding: 40px 0;
+  }
+
+  .btn {
+    padding: 15px 18px;
+    font-size: 1em;
+  }
+  // Components
+  nav {
+    .header-center,
+    .header-right {
+      display: none;
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    img {
+      min-width: 150px;
+      height: auto;
+    }
+  }
+
+  #numbers {
+    display: none;
+  }
+
+  #hero {
+    .inner {
+      padding: 30px 0;
+    }
+  }
+
+  #brands {
+    .brand-logos {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
+
+footer {
+  padding: 10px;
+  .inner{
+    grid-template-columns: 1fr;
+    grid-row: 4fr;
+    grid-gap: 50px;  }
+}
+
+
+
 }
