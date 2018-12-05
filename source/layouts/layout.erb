@@ -2,17 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="robots" content="noindex">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link type="image/ico" href="images/favicon.ico" rel="icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Ravalads" %></title>
+    <meta name="description" content="RavalAds is a Barcelona based brand-safe programmatic platform that provides cross-device solutions for publishers and advertisers.">
+    <meta name="keywords" content="advertising network, ad network, mobile advertising, banner ads, monetization, cpm network, interstitial ads, performance advertising, display advertising, video ads, traffic monetization, popunders">
+    <meta property="og:title" content="RavalAds - Advertising Network">
+    <meta property="og:description" content="RavalAds is a Barcelona based brand-safe programmatic platform that provides cross-device solutions for publishers and advertisers.">
+    <meta property="og:image" content="/Users/ludovicbourgoin/Documents/projects/ravalads/source/images/share-social.png">
+    <meta property="og:url" content="https://ravalads.com/">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+    <title><%= current_page.data.title || "Ravalads" %></title><%# TODO: Add a title to every page %>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
