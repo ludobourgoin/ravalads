@@ -110,7 +110,7 @@ header {
 
   nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 150px 1fr;
     align-items: center;
 
     a {
@@ -135,16 +135,12 @@ header {
       }
     }
 
-    .header-center {
-      justify-self: start;
-
-      a {
-        margin-right: 20px;
-      }
-    }
 
     .header-right {
       justify-self: end;
+      a {
+        margin-right: 20px;
+      }
 
       .btn-light:hover {
         background-color: $orange-hover;
@@ -221,8 +217,9 @@ header {
 #benefits {
   background-color: $grey;
   color: $purple;
-  padding-bottom: 50px;
-
+  h2 {
+    padding-bottom: 50px;
+  }
 }
 
 .benefits {
@@ -231,7 +228,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 70px 0;
 }
 
 .benefit {
@@ -398,7 +394,6 @@ footer {
   }
   // Components
   nav {
-    .header-center,
     .header-right {
       display: none;
     }
