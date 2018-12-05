@@ -51,14 +51,13 @@ h2 {
   font-size: 2.5em;
   font-weight: 700;
   text-transform: capitalize;
-  padding: 10px 0;
+  margin-bottom: 15px;
 }
 
 h3 {
   font-size: 2em;
   font-style: italic;
   padding: 10px 0;
-  text-transform: lowercase;
 }
 
 h4 {
@@ -218,16 +217,18 @@ header {
   background-color: $grey;
   color: $purple;
   h2 {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
+
 }
 
 .benefits {
-  max-width: 1000px;
-  margin: auto;
+  max-width: 1200px;
+  margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 
 .benefit {
@@ -244,7 +245,9 @@ header {
     text-align: left;
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.4em;
   }
   a {
     text-transform: none;
@@ -256,6 +259,8 @@ header {
   text-align: center;
   h4 {
     font-weight: 400;
+    font-size: 25px;
+    padding: 15px 0;
   }
   .inner {
     padding: 25px 0;
@@ -278,7 +283,7 @@ header {
 }
 
 #features {
-  h3 {
+  h2 {
     margin-bottom: 50px;
   }
 
@@ -369,6 +374,10 @@ footer {
   padding-bottom: 20px;
   text-align: center;
   color: $grey;
+}
+
+.advertisers {
+
 }
 
 @media (max-width: 750px) {
