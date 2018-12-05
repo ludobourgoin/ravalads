@@ -3,7 +3,6 @@
 @import 'variables';
 @import 'mixins';
 @import 'form';
-@import 'benefits';
 
 // General style
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:500,600|Ubuntu:400,500,700');
@@ -52,6 +51,10 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 500;
+}
+
+p {
+  line-height: 1.4em;
 }
 
 a {
@@ -201,127 +204,42 @@ header {
 #benefits {
   background-color: $grey;
   color: $purple;
-  padding-bottom: 80px;
-}
-
-.nav-tabs {
-  text-align: center;
-  margin: 50px 0 20px 0;
-}
-
-.tab-btn {
-  border-radius: 50px;
-  border: solid 2px $orange;
-  background-color: $orange;
-  text-transform: capitalize;
-  color: white;
-  padding: 12px 28px;
-  margin-right: 20px;
-  &:hover {
-    background-color: $orange-hover;
-    border-color: $orange-hover;
+  padding-bottom: 50px;
+  h2 {
+    margin-bottom: 50px;
   }
 }
 
-.info {
-  width: 1100px;
-  @include purple-bg;
+.benefits {
+  max-width: 1000px;
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  padding: 90px 80px;
-  .info-left {
-    width: 50%;
-    h2 {
-      text-align: left;
-      padding-top: 0;
-    }
+}
+
+.benefit {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+}
+
+.benefit-copy {
+  max-width: 350px;
+  margin-left: 20px;
+  h4 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
-  .info-right {
-    width: 50%;
-    margin: auto;
-    img {
-      width: 80%;
-    }
+  a {
+    text-transform: none;
+    color: $orange;
   }
 }
 
-.info {
-  display: none;
-}
-
-.active {
-
-}
-
-.current {
-  background-color: $grey;
-  color: $orange;
-}
-
-
-// #benefits {
-//   background-color: $grey;
-//   color: $purple;
-//   padding-bottom: 80px;
-//   .benefits-btn-list {
-//     text-align: center;
-//     margin: 50px 0 20px 0;
-//     .benefits-btn-selected {
-//       display: inline-flex;
-//       border: solid 2px $orange;
-//       align-items: center;
-//       border-radius: 50px;
-//       color: $orange;
-//       margin-right: 20px;
-//       padding: 5px 17px 5px 12px;
-//       img {
-//         margin-right: 10px;
-//       }
-//     }
-//
-//     .benefits-btn {
-//       display: inline-flex;
-//       border: solid 2px $orange;
-//       background-color: $orange;
-//       align-items: center;
-//       border-radius: 50px;
-//       color: white;
-//       margin-right: 20px;
-//       padding: 5px 19px 5px 12px;
-//       img {
-//         margin-right: 10px;
-//       }
-//     }
-//   }
-//   .benefits-hero {
-//     width: 1100px;
-//     @include purple-bg;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     padding: 90px 80px;
-//     .benefit-text {
-//       max-width: 50%;
-//       h2 {
-//         text-align: left;
-//         padding-top: 0;
-//         padding-bottom: 25px;
-//       }
-//       p {
-//         margin-bottom: 15px;
-//         line-height: 1.4em;
-//       }
-//     }
-//     .benefit-illustration {
-//       text-align: center;
-//       img {
-//         width: 85%;
-//         height: auto;
-//       }
-//     }
-//   }
-// }
 
 #brands {
   background-color: $blue;
@@ -373,10 +291,7 @@ header {
       margin-bottom: 20px;
     }
 
-    p {
-      margin-bottom: 15px;
-      line-height: 1.4em;
-    }
+
   }
 }
 
